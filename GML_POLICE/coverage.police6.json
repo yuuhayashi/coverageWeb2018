@@ -1,13 +1,13 @@
 {
- "timestamp": "2017-12-05",
+ "timestamp": "2018-07-18",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）6:派出所",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 157,
-   "molecule": 95,
-   "par": 60.51
+   "molecule": 97,
+   "par": 61.78
   }
   ,  {
    "code": 1,
@@ -20,8 +20,8 @@
    "code": 2,
    "name": "青森県",
    "denominator": 4,
-   "molecule": 0,
-   "par": 0.00
+   "molecule": 1,
+   "par": 25.00
   }
   ,  {
    "code": 3,
@@ -202,8 +202,8 @@
    "code": 28,
    "name": "兵庫県",
    "denominator": 14,
-   "molecule": 2,
-   "par": 14.29
+   "molecule": 3,
+   "par": 21.43
   }
   ,  {
    "code": 29,
@@ -216,8 +216,8 @@
    "code": 30,
    "name": "和歌山県",
    "denominator": 1,
-   "molecule": 1,
-   "par": 100.00
+   "molecule": 0,
+   "par": 0.00
   }
   ,  {
    "code": 31,
@@ -314,8 +314,8 @@
    "code": 44,
    "name": "大分県",
    "denominator": 7,
-   "molecule": 1,
-   "par": 14.29
+   "molecule": 2,
+   "par": 28.57
   }
   ,  {
    "code": 45,

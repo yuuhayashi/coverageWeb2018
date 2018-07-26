@@ -1,5 +1,5 @@
 {
- "timestamp": "2018-07-18",
+ "timestamp": "2018-07-22",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）5:駐在所",
  "coverage": [
   {
@@ -76,8 +76,8 @@
    "code": 10,
    "name": "群馬県",
    "denominator": 118,
-   "molecule": 112,
-   "par": 94.92
+   "molecule": 113,
+   "par": 95.76
   }
   ,  {
    "code": 11,
@@ -216,8 +216,8 @@
    "code": 30,
    "name": "和歌山県",
    "denominator": 108,
-   "molecule": 107,
-   "par": 99.07
+   "molecule": 106,
+   "par": 98.15
   }
   ,  {
    "code": 31,

@@ -1,5 +1,5 @@
 {
- "timestamp": "2018-07-18",
+ "timestamp": "2018-07-22",
  "sourcedata": "国土数値情報 郵便局データ（平成25年）",
  "coverage": [
   {
@@ -13,8 +13,8 @@
    "code": 1,
    "name": "北海道",
    "denominator": 1515,
-   "molecule": 554,
-   "par": 36.57
+   "molecule": 555,
+   "par": 36.63
   }
   ,  {
    "code": 2,
@@ -27,8 +27,8 @@
    "code": 3,
    "name": "岩手県",
    "denominator": 433,
-   "molecule": 82,
-   "par": 18.94
+   "molecule": 83,
+   "par": 19.17
   }
   ,  {
    "code": 4,
@@ -132,8 +132,8 @@
    "code": 18,
    "name": "福井県",
    "denominator": 243,
-   "molecule": 235,
-   "par": 96.71
+   "molecule": 234,
+   "par": 96.30
   }
   ,  {
    "code": 19,
@@ -286,8 +286,8 @@
    "code": 40,
    "name": "福岡県",
    "denominator": 814,
-   "molecule": 798,
-   "par": 98.03
+   "molecule": 797,
+   "par": 97.91
   }
   ,  {
    "code": 41,

@@ -1,13 +1,13 @@
 {
- "timestamp": "2018-04-04",
+ "timestamp": "2018-03-08",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）2:警察署",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 1175,
-   "molecule": 1011,
-   "par": 86.04
+   "molecule": 1007,
+   "par": 85.70
   }
   ,  {
    "code": 1,
@@ -27,8 +27,8 @@
    "code": 3,
    "name": "岩手県",
    "denominator": 17,
-   "molecule": 9,
-   "par": 52.94
+   "molecule": 8,
+   "par": 47.06
   }
   ,  {
    "code": 4,
@@ -41,8 +41,8 @@
    "code": 5,
    "name": "秋田県",
    "denominator": 15,
-   "molecule": 10,
-   "par": 66.67
+   "molecule": 7,
+   "par": 46.67
   }
   ,  {
    "code": 6,
@@ -279,15 +279,15 @@
    "code": 39,
    "name": "高知県",
    "denominator": 15,
-   "molecule": 15,
-   "par": 100.00
+   "molecule": 14,
+   "par": 93.33
   }
   ,  {
    "code": 40,
    "name": "福岡県",
    "denominator": 34,
-   "molecule": 33,
-   "par": 97.06
+   "molecule": 34,
+   "par": 100.00
   }
   ,  {
    "code": 41,

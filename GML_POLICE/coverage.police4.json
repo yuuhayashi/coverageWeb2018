@@ -1,13 +1,13 @@
 {
- "timestamp": "2018-04-04",
+ "timestamp": "2018-03-08",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）4:交番",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 6330,
-   "molecule": 5446,
-   "par": 86.03
+   "molecule": 5438,
+   "par": 85.91
   }
   ,  {
    "code": 1,
@@ -34,22 +34,22 @@
    "code": 4,
    "name": "宮城県",
    "denominator": 88,
-   "molecule": 58,
-   "par": 65.91
+   "molecule": 59,
+   "par": 67.05
   }
   ,  {
    "code": 5,
    "name": "秋田県",
    "denominator": 47,
-   "molecule": 20,
-   "par": 42.55
+   "molecule": 16,
+   "par": 34.04
   }
   ,  {
    "code": 6,
    "name": "山形県",
    "denominator": 38,
-   "molecule": 22,
-   "par": 57.89
+   "molecule": 21,
+   "par": 55.26
   }
   ,  {
    "code": 7,
@@ -97,8 +97,8 @@
    "code": 13,
    "name": "東京都",
    "denominator": 830,
-   "molecule": 806,
-   "par": 97.11
+   "molecule": 805,
+   "par": 96.99
   }
   ,  {
    "code": 14,
@@ -146,8 +146,8 @@
    "code": 20,
    "name": "長野県",
    "denominator": 90,
-   "molecule": 23,
-   "par": 25.56
+   "molecule": 22,
+   "par": 24.44
   }
   ,  {
    "code": 21,
@@ -202,8 +202,8 @@
    "code": 28,
    "name": "兵庫県",
    "denominator": 426,
-   "molecule": 414,
-   "par": 97.18
+   "molecule": 413,
+   "par": 96.95
   }
   ,  {
    "code": 29,
@@ -335,8 +335,8 @@
    "code": 47,
    "name": "沖縄県",
    "denominator": 68,
-   "molecule": 65,
-   "par": 95.59
+   "molecule": 64,
+   "par": 94.12
   }
  ]
 }

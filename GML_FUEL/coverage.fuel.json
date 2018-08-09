@@ -5,7 +5,7 @@
   {
    "code": 0,
    "name": "全国",
-   "denominator": 26504,
+   "denominator": 26503,
    "molecule": 8781,
    "par": 33.13
   }
@@ -103,9 +103,9 @@
   ,  {
    "code": 14,
    "name": "神奈川県",
-   "denominator": 831,
+   "denominator": 830,
    "molecule": 830,
-   "par": 99.88
+   "par": 100.00
   }
   ,  {
    "code": 15,

@@ -5,7 +5,10 @@ OpenStreetMap coverage in japan Web server
  
 ==========
  
-# Webサイト [POI別カバレッジ状況](http://surveyor.mydns.jp/coverage/) について
+# Webサイト [POI別カバレッジ状況](https://yuuhayashi.github.io/coverageWeb) について
+
+ * 本家サイトは[http://surveyor.mydns.jp/coverage/](http://surveyor.mydns.jp/coverage/)ですが、`GitHub Pages`でも見ることができます。  
+[GitHub版](https://yuuhayashi.github.io/coverageWeb)のほうがおすすめです。
 
 
 # SoTM Japan 2018

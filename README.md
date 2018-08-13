@@ -14,6 +14,6 @@ OpenStreetMap coverage in japan Web server
 # SoTM Japan 2018
 
 2018-08-11 SoTM Japan で発表しました。
-  [slide PDF](SoTMjp20180810.pdf)
+  [slide PDF](https://yuuhayashi.github.io/coverageWeb/SoTMjp20180810.pdf)
 
 

@@ -1,13 +1,13 @@
 {
- "timestamp": "2018-09-17",
+ "timestamp": "2018-09-24",
  "sourcedata": "国土数値情報　バス停留所データ 平成２２年",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 254842,
-   "molecule": 39545,
-   "par": 15.52
+   "molecule": 39616,
+   "par": 15.55
   }
   ,  {
    "code": 1,
@@ -76,8 +76,8 @@
    "code": 10,
    "name": "群馬県",
    "denominator": 4952,
-   "molecule": 212,
-   "par": 4.28
+   "molecule": 213,
+   "par": 4.30
   }
   ,  {
    "code": 11,
@@ -90,8 +90,8 @@
    "code": 12,
    "name": "千葉県",
    "denominator": 10048,
-   "molecule": 1449,
-   "par": 14.42
+   "molecule": 1450,
+   "par": 14.43
   }
   ,  {
    "code": 13,
@@ -104,8 +104,8 @@
    "code": 14,
    "name": "神奈川県",
    "denominator": 8466,
-   "molecule": 5772,
-   "par": 68.18
+   "molecule": 5775,
+   "par": 68.21
   }
   ,  {
    "code": 15,
@@ -139,15 +139,15 @@
    "code": 19,
    "name": "山梨県",
    "denominator": 2159,
-   "molecule": 281,
-   "par": 13.02
+   "molecule": 282,
+   "par": 13.06
   }
   ,  {
    "code": 20,
    "name": "長野県",
    "denominator": 8821,
-   "molecule": 432,
-   "par": 4.90
+   "molecule": 436,
+   "par": 4.94
   }
   ,  {
    "code": 21,
@@ -174,8 +174,8 @@
    "code": 24,
    "name": "三重県",
    "denominator": 4864,
-   "molecule": 131,
-   "par": 2.69
+   "molecule": 132,
+   "par": 2.71
   }
   ,  {
    "code": 25,
@@ -195,8 +195,8 @@
    "code": 27,
    "name": "大阪府",
    "denominator": 5844,
-   "molecule": 2069,
-   "par": 35.40
+   "molecule": 2072,
+   "par": 35.46
   }
   ,  {
    "code": 28,
@@ -321,8 +321,8 @@
    "code": 45,
    "name": "宮崎県",
    "denominator": 4099,
-   "molecule": 77,
-   "par": 1.88
+   "molecule": 134,
+   "par": 3.27
   }
   ,  {
    "code": 46,

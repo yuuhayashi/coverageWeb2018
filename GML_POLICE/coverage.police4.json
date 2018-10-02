@@ -1,20 +1,20 @@
 {
- "timestamp": "2018-09-24",
+ "timestamp": "2018-10-01",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）4:交番",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 6330,
-   "molecule": 5474,
-   "par": 86.48
+   "molecule": 5477,
+   "par": 86.52
   }
   ,  {
    "code": 1,
    "name": "北海道",
    "denominator": 309,
-   "molecule": 134,
-   "par": 43.37
+   "molecule": 138,
+   "par": 44.66
   }
   ,  {
    "code": 2,
@@ -195,8 +195,8 @@
    "code": 27,
    "name": "大阪府",
    "denominator": 600,
-   "molecule": 590,
-   "par": 98.33
+   "molecule": 589,
+   "par": 98.17
   }
   ,  {
    "code": 28,

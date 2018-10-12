@@ -1,5 +1,5 @@
 {
- "timestamp": "2018-10-01",
+ "timestamp": "2018-10-08",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）5:駐在所",
  "coverage": [
   {
@@ -34,8 +34,8 @@
    "code": 4,
    "name": "宮城県",
    "denominator": 139,
-   "molecule": 46,
-   "par": 33.09
+   "molecule": 47,
+   "par": 33.81
   }
   ,  {
    "code": 5,
@@ -216,8 +216,8 @@
    "code": 30,
    "name": "和歌山県",
    "denominator": 108,
-   "molecule": 106,
-   "par": 98.15
+   "molecule": 105,
+   "par": 97.22
   }
   ,  {
    "code": 31,

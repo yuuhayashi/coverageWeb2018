@@ -1,13 +1,13 @@
 {
- "timestamp": "2018-10-15",
+ "timestamp": "2018-10-22",
  "sourcedata": "国土数値情報　バス停留所データ 平成２２年",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 254842,
-   "molecule": 39804,
-   "par": 15.62
+   "molecule": 39877,
+   "par": 15.65
   }
   ,  {
    "code": 1,
@@ -62,8 +62,8 @@
    "code": 8,
    "name": "茨城県",
    "denominator": 6815,
-   "molecule": 681,
-   "par": 9.99
+   "molecule": 707,
+   "par": 10.37
   }
   ,  {
    "code": 9,
@@ -90,22 +90,22 @@
    "code": 12,
    "name": "千葉県",
    "denominator": 10048,
-   "molecule": 1458,
-   "par": 14.51
+   "molecule": 1462,
+   "par": 14.55
   }
   ,  {
    "code": 13,
    "name": "東京都",
    "denominator": 9446,
-   "molecule": 6084,
-   "par": 64.41
+   "molecule": 6102,
+   "par": 64.60
   }
   ,  {
    "code": 14,
    "name": "神奈川県",
    "denominator": 8466,
-   "molecule": 5777,
-   "par": 68.24
+   "molecule": 5785,
+   "par": 68.33
   }
   ,  {
    "code": 15,
@@ -118,8 +118,8 @@
    "code": 16,
    "name": "富山県",
    "denominator": 2979,
-   "molecule": 528,
-   "par": 17.72
+   "molecule": 529,
+   "par": 17.76
   }
   ,  {
    "code": 17,
@@ -153,8 +153,8 @@
    "code": 21,
    "name": "岐阜県",
    "denominator": 5851,
-   "molecule": 317,
-   "par": 5.42
+   "molecule": 319,
+   "par": 5.45
   }
   ,  {
    "code": 22,
@@ -174,8 +174,8 @@
    "code": 24,
    "name": "三重県",
    "denominator": 4864,
-   "molecule": 146,
-   "par": 3.00
+   "molecule": 151,
+   "par": 3.10
   }
   ,  {
    "code": 25,
@@ -230,8 +230,8 @@
    "code": 32,
    "name": "島根県",
    "denominator": 4769,
-   "molecule": 47,
-   "par": 0.99
+   "molecule": 48,
+   "par": 1.01
   }
   ,  {
    "code": 33,
@@ -272,8 +272,8 @@
    "code": 38,
    "name": "愛媛県",
    "denominator": 3169,
-   "molecule": 3163,
-   "par": 99.81
+   "molecule": 3162,
+   "par": 99.78
   }
   ,  {
    "code": 39,
@@ -328,8 +328,8 @@
    "code": 46,
    "name": "鹿児島県",
    "denominator": 7432,
-   "molecule": 287,
-   "par": 3.86
+   "molecule": 296,
+   "par": 3.98
   }
   ,  {
    "code": 47,

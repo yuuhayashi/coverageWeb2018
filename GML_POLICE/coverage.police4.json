@@ -1,5 +1,5 @@
 {
- "timestamp": "2018-10-22",
+ "timestamp": "2018-10-29",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）4:交番",
  "coverage": [
   {
@@ -146,8 +146,8 @@
    "code": 20,
    "name": "長野県",
    "denominator": 90,
-   "molecule": 30,
-   "par": 33.33
+   "molecule": 31,
+   "par": 34.44
   }
   ,  {
    "code": 21,
@@ -216,8 +216,8 @@
    "code": 30,
    "name": "和歌山県",
    "denominator": 60,
-   "molecule": 56,
-   "par": 93.33
+   "molecule": 55,
+   "par": 91.67
   }
   ,  {
    "code": 31,

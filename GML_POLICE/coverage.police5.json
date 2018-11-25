@@ -1,13 +1,13 @@
 {
- "timestamp": "2018-11-13",
+ "timestamp": "2018-11-19",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）5:駐在所",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 6715,
-   "molecule": 4946,
-   "par": 73.66
+   "molecule": 4947,
+   "par": 73.67
   }
   ,  {
    "code": 1,
@@ -111,8 +111,8 @@
    "code": 15,
    "name": "新潟県",
    "denominator": 222,
-   "molecule": 11,
-   "par": 4.95
+   "molecule": 12,
+   "par": 5.41
   }
   ,  {
    "code": 16,

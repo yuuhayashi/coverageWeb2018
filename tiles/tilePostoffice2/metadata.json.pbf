@@ -1,6 +1,5 @@
 {
     "name": "postoffice2.mbtiles", 
-    "generator": "tippecanoe v1.30.0", 
     "format": "pbf", 
     "description": "postoffice2.mbtiles", 
     "json": "{\"vector_layers\": [ { \"id\": \"postoffice_map2\", \"description\": \"\", \"minzoom\": 6, \"maxzoom\": 16, \"fields\": {\"fixed\": \"Number\", \"idref\": \"String\"} } ],\"tilestats\": {\"layerCount\": 1,\"layers\": [{\"layer\": \"postoffice_map2\",\"count\": 19848,\"geometry\": \"Point\",\"attributeCount\": 2,\"attributes\": [{\"attribute\": \"fixed\",\"count\": 1,\"type\": \"number\",\"values\": [50],\"min\": 50,\"max\": 50},{\"attribute\": \"idref\",\"count\": 1,\"type\": \"string\",\"values\": [\"\"]}]}]}}", 

@@ -12,10 +12,11 @@
     <div class="header">
         <H1>OpenStreetMap coverage (警察署を指標にした網羅率)</H1>
         <div id="map" style="height: 720px; width: 98%;"></div>
-        <div id="timestamp2"></div><br/>
-        <div id="source"></div>
+        <p><span style="color:red">●</span>:未入力, <span style="color:gold">●</span>:とりあえず入力済み, <span style="color:lime">●</span>:入力済み</p>
         <ul>
-            <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Mapillary_logo.svg" width="32" height="32"/> 「<a href="police2M.html">Mappillary+</a>」版も有ります</li>
+            <li><div id="timestamp"></div></li>
+            <li><div id="source"></div></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Mapillary_logo.svg" width="16" height="16"/> 「<a href="police2M.html">Mappillary+</a>」版も有ります</li>
         </ul>
         <hr/>
     </div>
@@ -102,8 +103,7 @@
     
     var tileDate = 'GML_POLICE/pbfDate.json';
     $.getJSON(tileDate, function(data) {
-        $("#timestamp").append("<p>" + data.date + " 更新</p>") ;
-        $("#timestamp2").append("<p>上図は " + data.date + " での状況<br/>   赤: 未入力, オレンジ: とりあえず入力されている, 蛍光グリーン: 入力済み</p>") ;
+        $("#timestamp").append("更新:"+ data.date);
     });
 </script>
 <script src="police2.js"></script>

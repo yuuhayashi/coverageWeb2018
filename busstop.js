@@ -22,8 +22,8 @@ var map = L.map('map',{
 
     function setCenterMap (e) {
         map.panTo(e.latlng);
-    } 
-
+    }
+    map.locate({setView: true, maxZoom: 16, timeout: 20000});
 
 //OSMレイヤー追加
 var osm = L.tileLayer(

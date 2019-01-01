@@ -1,6 +1,29 @@
 var debug = {};
 
-var map = L.map('map').setView([36.131, 140.241], 9); // Kasumigaura
+var map = L.map('map',{
+  center: [36.131, 140.241],
+  zoom: 15,
+  minZoom: 13,
+  maxZoom: 16,
+  contextmenu: true,
+  contextmenuWidth: 180,
+  contextmenuItems: [{
+      text: '緯度経度を表示',
+      callback: showLatLng
+  }, {
+      text: 'この地点を地図の中央に指定',
+      callback: setCenterMap
+  }]
+}).setView([36.131, 140.241], 9); // Kasumigaura
+
+    function showLatLng (e) {
+        alert(e.latlng);
+    }
+
+    function setCenterMap (e) {
+        map.panTo(e.latlng);
+    }
+
 
 //OSMレイヤー追加
 var osm = L.tileLayer(
@@ -63,3 +86,4 @@ mvtSource1.addTo(map);
 mvtSource0.addTo(map);
 
 L.control.scale({imperial:false}).addTo(map);
+

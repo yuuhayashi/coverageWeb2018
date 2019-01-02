@@ -17,7 +17,19 @@ var map = L.map('map',{
 }).setView([36.131, 140.241], 9); // Kasumigaura
 
     function showLatLng (e) {
-        alert(e.latlng);
+        var param = {
+            latlng: e.latlng,
+            km: 1
+        };
+
+        $.ajax({
+            url:"http://surveyor.mydns.jp/unMapped/kmz/busstop",
+            type:"GET",
+            dataType:"text",
+            data:"latlng="+ e.lat +"&km=1",
+            contentType: 'application/json'
+        });
+
     }
 
     function setCenterMap (e) {

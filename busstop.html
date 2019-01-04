@@ -6,17 +6,19 @@
  <title>OpenStreetMap coverage (amenity=fuel)</title>
  <link rel="stylesheet" href="lib/surveyor.css">
  <link rel="stylesheet" href="lib/leaflet-0.7.3/leaflet.css"/>
+ <link rel="stylesheet" href="lib/Leaflet.MapCenterCoord/L.Control.MapCenterCoord.css" />
+ <link rel="stylesheet" href="lib/Leaflet.contextmenu/leaflet.contextmenu.min.css" />
 </head>
 <body>
 <div id="wrap">
     <div class="header">
         <H1>OpenStreetMap coverage (バス停を指標にした網羅率)</H1>
         <div id="map" style="height: 720px; width: 98%;"></div>
-        <div id="timestamp2"></div><br/>
-        <div id="source"></div>
+        <p><span style="color:red">●</span>:未入力, <span style="color:gold">●</span>:とりあえず入力済み, <span style="color:lime">●</span>:入力済み</p>
         <ul>
-            <li>（旧版）2017-10-08時点での状況は<a href="https://hayashi.carto.com/builder/48b1de25-3aac-491d-8cee-95d747add887/embed">CARTO</a>にて参照可能です　<img src="img/92px-CARTO-logo.svg.png"/></li>
-            <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Mapillary_logo.svg" width="32" height="32"/> 「<a href="busstopM.html">Mappillary+</a>」版も有ります</li>
+            <li><div id="timestamp"></div></li>
+            <li><div id="source"></div></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Mapillary_logo.svg" width="16" height="16"/> 「<a href="busstopM.html">Mappillary+</a>」版も有ります</li>
         </ul>
         <hr/>
     </div>
@@ -55,10 +57,10 @@
             <br/>
             レベル分け:<br/>
               評価点の合計値をもとに以下に色分けしています。<br/>
-                0ポイント　→　赤 (未入力）<br/>
-                1ポイント　→ オレンジ (一次入力)<br/>
-                2ポイント　→　黄緑 (入力済) <br/>
-                3ポイント　→　緑 (入力済) <br/>
+                0ポイント　→ <font color="red">●</font>(未入力）<br/>
+                1ポイント　→ <font color="gold">●</font>(一次入力)<br/>
+                2ポイント　→ <font color="gold">●</font>(入力済) <br/>
+                3ポイント　→ <font color="lime">●</font>(入力済) <br/>
             </p>
             <p>DEVELOP: <a href="http://surveyor.mydns.jp/gitbucket/yuu/osmCoverage/wiki">SRC</a>も公開. 自由にお使いください</p>
 
@@ -89,11 +91,12 @@
 </div>
 <script src="lib/leaflet-0.7.3/leaflet-src.js"></script>
 <script src="lib/Leaflet.MapboxVectorTile.js"></script>
+<script src="lib/Leaflet.MapCenterCoord/L.Control.MapCenterCoord.js"></script>
+<script src="lib/Leaflet.contextmenu/leaflet.contextmenu.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
  <script>
 window.addEventListener('DOMContentLoaded', function() {
-    $.getJSON("GML_BUSSTOP/coverage.busstop.json", function(data) {
+    $.getJSON("https://yuuhayashi.github.io/coverageWeb/GML_BUSSTOP/coverage.busstop.json", function(data) {
         var count = 0 ;
         $("#source").append("国土交通省国土政策局「" + data.sourcedata + "」をもとにhayashiが編集・加工したものです。") ;
         $(data.coverage).each(function() {
@@ -107,10 +110,9 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    var tileDate = 'GML_BUSSTOP/pbfDate.json';
+    var tileDate = 'https://yuuhayashi.github.io/coverageWeb/GML_BUSSTOP/pbfDate.json';
     $.getJSON(tileDate, function(data) {
-        $("#timestamp").append("<p>" + data.date + " 更新</p>") ;
-        $("#timestamp2").append("<p>上図は " + data.date + " での状況<br/>   赤: 未入力, オレンジ: とりあえず入力済み, 蛍光グリーン: 入力済み</p>") ;
+        $("#timestamp").append("更新:"+ data.date);
     });
 });
  </script>

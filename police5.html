@@ -6,16 +6,19 @@
  <title>OpenStreetMap coverage (amenity=police)</title>
  <link rel="stylesheet" href="lib/surveyor.css">
  <link rel="stylesheet" href="lib/leaflet-0.7.3/leaflet.css"/>
+ <link rel="stylesheet" href="lib/Leaflet.MapCenterCoord/L.Control.MapCenterCoord.css" />
+ <link rel="stylesheet" href="lib/Leaflet.contextmenu/leaflet.contextmenu.min.css" />
 </head>
 <body>
 <div id="wrap">
     <div class="header">
         <H1>OpenStreetMap coverage (駐在所の網羅率)</H1>
         <div id="map" style="height: 720px; width: 98%;"></div>
-        <div id="timestamp2"></div><br/>
-        <div id="source"></div>
+        <p><span style="color:red">●</span>:未入力, <span style="color:gold">●</span>:とりあえず入力済み, <span style="color:lime">●</span>:入力済み</p>
         <ul>
-            <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Mapillary_logo.svg" width="32" height="32"/> 「<a href="police5M.html">Mappillary+</a>」版も有ります</li>
+            <li><div id="timestamp"></div></li>
+            <li><div id="source"></div></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Mapillary_logo.svg" width="16" height="16"/> 「<a href="police5M.html">Mappillary+</a>」版も有ります</li>
         </ul>
         <hr/>
     </div>
@@ -82,10 +85,11 @@
     </div>
 </div>
 <script src="lib/leaflet-0.7.3/leaflet-src.js"></script>
-<script src="lib/Leaflet.MapboxVectorTile.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="lib/Leaflet.MapCenterCoord/L.Control.MapCenterCoord.js"></script>
+<script src="lib/Leaflet.contextmenu/leaflet.contextmenu.min.js"></script>
 <script>
-    var jsonurl = './GML_POLICE/coverage.police5.json';
+    var jsonurl = 'https://yuuhayashi.github.io/coverageWeb/GML_POLICE/coverage.police5.json';
     $.getJSON(jsonurl, function(data) {
         var count = 0;
         $("#source").append("国土交通省国土政策局「" + data.sourcedata + "」をもとにhayashiが編集・加工したものです。") ;
@@ -100,10 +104,9 @@
         });
     });
     
-    var tileDate = './GML_POLICE/pbfDate.json';
+    var tileDate = 'https://yuuhayashi.github.io/coverageWeb/GML_POLICE/pbfDate.json';
     $.getJSON(tileDate, function(data) {
-        $("#timestamp").append("<p>" + data.date + " 更新</p>") ;
-        $("#timestamp2").append("<p>上図は " + data.date + " での状況<br/>   赤: 未入力, オレンジ: とりあえず入力されている, 蛍光グリーン: 入力済み</p>") ;
+        $("#timestamp").append("更新:"+ data.date);
     });
 </script>
 <script src="police5.js"></script>

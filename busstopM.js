@@ -31,7 +31,7 @@ grayOsmLayer.on('postcompose', function(event) {
 const mvtSource0 = new ol.layer.VectorTile({
     source: new ol.source.VectorTile({
         format: new ol.format.MVT(),
-        url: "./tiles/tileBus0/{z}/{x}/{y}.pbf"
+        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tileBus0/{z}/{x}/{y}.pbf"
     }),
     title: "Fuel 0: 未入力",
     visible: true,
@@ -51,7 +51,7 @@ const mvtSource0 = new ol.layer.VectorTile({
 const mvtSource1 = new ol.layer.VectorTile({
     source: new ol.source.VectorTile({
         format: new ol.format.MVT(),
-        url: "./tiles/tileBus1/{z}/{x}/{y}.pbf"
+        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tileBus1/{z}/{x}/{y}.pbf"
     }),
     title: "Fuel 1: 入力済",
     visible: true,
@@ -71,7 +71,7 @@ const mvtSource1 = new ol.layer.VectorTile({
 const mvtSource2 = new ol.layer.VectorTile({
     source: new ol.source.VectorTile({
         format: new ol.format.MVT(),
-        url: "./tiles/tileBus2/{z}/{x}/{y}.pbf"
+        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tileBus2/{z}/{x}/{y}.pbf"
     }),
     title: "Fuel 2: 完了",
     visible: true,

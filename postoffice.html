@@ -6,14 +6,19 @@
  <title>OpenStreetMap coverage (amenity=postoffice)</title>
  <link rel="stylesheet" href="lib/surveyor.css">
  <link rel="stylesheet" href="lib/leaflet-0.7.3/leaflet.css"/>
+ <link rel="stylesheet" href="lib/Leaflet.MapCenterCoord/L.Control.MapCenterCoord.css" />
+ <link rel="stylesheet" href="lib/Leaflet.contextmenu/leaflet.contextmenu.min.css" />
 </head>
 <body>
 <div id="wrap">
     <div class="header">
         <H1>OpenStreetMap coverage (国土数値情報 郵便局データを指標にした網羅率)</H1>
         <div id="map" style="height: 720px; width: 98%;"></div>
-        <div id="timestamp2"></div><br/>
-        <div id="source"></div>
+        <p><span style="color:red">●</span>:未入力, <span style="color:lime">●</span>:入力済み</p>
+        <ul>
+            <li><div id="timestamp"></div></li>
+            <li><div id="source"></div></li>
+        </ul>
         <hr/>
     </div>
 
@@ -74,9 +79,11 @@
 </div>
 <script src="lib/leaflet-0.7.3/leaflet-src.js"></script>
 <script src="lib/Leaflet.MapboxVectorTile.js"></script>
+<script src="lib/Leaflet.MapCenterCoord/L.Control.MapCenterCoord.js"></script>
+<script src="lib/Leaflet.contextmenu/leaflet.contextmenu.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
-    var jsonurl = 'GML_POSTOFFICE/coverage.postoffice.json';
+    var jsonurl = 'https://yuuhayashi.github.io/coverageWeb/GML_POSTOFFICE/coverage.postoffice.json';
     $.getJSON(jsonurl, function(data) {
         var count = 0;
         $("#source").append("国土交通省国土政策局「" + data.sourcedata + "」をもとにhayashiが編集・加工したものです。") ;
@@ -91,10 +98,9 @@
         });
     });
     
-    var tileDate = 'GML_POSTOFFICE/pbfDate.json';
+    var tileDate = 'https://yuuhayashi.github.io/coverageWeb/GML_POSTOFFICE/pbfDate.json';
     $.getJSON(tileDate, function(data) {
-        $("#timestamp").append("<p>" + data.date + " 更新</p>") ;
-        $("#timestamp2").append("<p>上図は " + data.date + " での状況<br/>   赤: 未入力, オレンジ: とりあえず入力されている, 蛍光グリーン: 入力済み</p>") ;
+        $("#timestamp").append("更新:"+ data.date) ;
     });
 </script>
 <script src="postoffice.js"></script>

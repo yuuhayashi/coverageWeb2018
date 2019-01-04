@@ -28,12 +28,12 @@ grayOsmLayer.on('postcompose', function(event) {
 });
 */
 
-const police2z = new ol.layer.VectorTile({
+const fuel0 = new ol.layer.VectorTile({
     source: new ol.source.VectorTile({
         format: new ol.format.MVT(),
-        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tilePolice2z/{z}/{x}/{y}.pbf"
+        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tileFuel0/{z}/{x}/{y}.pbf"
     }),
-    title: "Police 0: 未入力",
+    title: "Fuel 0: 未入力",
     visible: true,
     opacity: 1,
     style: function(feature){
@@ -48,12 +48,32 @@ const police2z = new ol.layer.VectorTile({
     }
 });
 
-const police2 = new ol.layer.VectorTile({
+const fuel1 = new ol.layer.VectorTile({
     source: new ol.source.VectorTile({
         format: new ol.format.MVT(),
-        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tilePolice2/{z}/{x}/{y}.pbf"
+        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tileFuel1/{z}/{x}/{y}.pbf"
     }),
-    title: "Police 1: 入力済み",
+    title: "Fuel 1: 入力済",
+    visible: true,
+    opacity: 1,
+    style: function(feature){
+        return [
+            new ol.style.Style({
+                image: new ol.style.Circle({
+                    radius: 8,
+                    fill: new ol.style.Fill({color: "#ffc800"})
+                })
+            })
+        ];
+    }
+});
+
+const fuel2 = new ol.layer.VectorTile({
+    source: new ol.source.VectorTile({
+        format: new ol.format.MVT(),
+        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tileFuel2/{z}/{x}/{y}.pbf"
+    }),
+    title: "Fuel 2: 完了",
     visible: true,
     opacity: 1,
     style: function(feature){
@@ -93,5 +113,5 @@ const map = new ol.Map({
     target: "map",
     controls: ol.control.defaults().extend([new ol.control.ScaleLine()]),
     view: view,
-    layers: [ort, police2, police2z, mapillary]
+    layers: [ort, fuel2, fuel1, fuel0, mapillary]
 });

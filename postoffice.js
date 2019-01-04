@@ -1,18 +1,71 @@
 var debug = {};
 
-var map = L.map('map').setView([36.131, 140.241], 9); // Kasumigaura
+var map = L.map('map',{
+  center: [36.131, 140.241],
+  zoom: 11,
+  minZoom: 6,
+  maxZoom: 16,
+  contextmenu: true,
+  contextmenuWidth: 180,
+  
+    contextmenuItems: [{
+        text: 'この地点を地図の中央に指定',
+        callback: setCenterMap
+      },
+      {
+        text: '取得(地図中央1km範囲)',
+        callback: showLatLng
+      },
+      {
+        text: '取得(地図中央3km範囲)',
+        callback: showLatLng3
+      },
+      {
+        text: '取得(地図中央5km範囲)',
+        callback: showLatLng5
+      },
+      {
+        text: '取得(地図中央10km範囲)',
+        callback: showLatLng10
+      },
+      {
+        text: '取得(地図中央20km範囲)',
+        callback: showLatLng20
+      }]
+    });
+
+    function showLatLng (e) {
+        location.href = "/unMapped/api/kmz/postoffice?latlng="+ e.latlng +"&km=1";
+    }
+    function showLatLng3 (e) {
+        location.href = "/unMapped/api/kmz/postoffice?latlng="+ e.latlng +"&km=3";
+    }
+    function showLatLng5 (e) {
+        location.href = "/unMapped/api/kmz/postoffice?latlng="+ e.latlng +"&km=5";
+    }
+    function showLatLng10 (e) {
+        location.href = "/unMapped/api/kmz/postoffice?latlng="+ e.latlng +"&km=10";
+    }
+    function showLatLng20 (e) {
+        location.href = "/unMapped/api/kmz/postoffice?latlng="+ e.latlng +"&km=20";
+    }
+
+    function setCenterMap (e) {
+        map.panTo(e.latlng);
+    }
+    map.locate({setView: true, maxZoom: 16, timeout: 20000});
 
 //OSMレイヤー追加
 var osm = L.tileLayer(
-    'http://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>',
-        maxZoom: 18
+        maxZoom: 16
     }
 );
 osm.addTo(map);
 
 var mvtSource0 = new L.TileLayer.MVTSource({
-    url: "./tiles/tilePostoffice0/{z}/{x}/{y}.pbf",
+    url: "https://yuuhayashi.github.io/coverageWeb/tiles/tilePostoffice0/{z}/{x}/{y}.pbf",
     style: function (feature) {
         var style = {};
         style.color = 'rgba(255,0,0,1)';
@@ -26,7 +79,7 @@ var mvtSource0 = new L.TileLayer.MVTSource({
 map.addLayer(mvtSource0);
 
 var mvtSource1 = new L.TileLayer.MVTSource({
-    url: "./tiles/tilePostoffice1/{z}/{x}/{y}.pbf",
+    url: "https://yuuhayashi.github.io/coverageWeb/tiles/tilePostoffice1/{z}/{x}/{y}.pbf",
     style: function (feature) {
         var style = {};
         style.color = 'rgba(255,200,0,1)';
@@ -40,7 +93,7 @@ var mvtSource1 = new L.TileLayer.MVTSource({
 map.addLayer(mvtSource1);
 
 var mvtSource2 = new L.TileLayer.MVTSource({
-    url: "./tiles/tilePostoffice2/{z}/{x}/{y}.pbf",
+    url: "https://yuuhayashi.github.io/coverageWeb/tiles/tilePostoffice2/{z}/{x}/{y}.pbf",
     style: function (feature) {
         var style = {};
         style.color = 'rgba(0,255,0,1)';
@@ -63,3 +116,9 @@ mvtSource1.addTo(map);
 mvtSource0.addTo(map);
 
 L.control.scale({imperial:false}).addTo(map);
+
+    // MapCenterCoord
+    var options = {
+      position: 'bottomleft' // 'topleft', 'topright', 'bottomleft' (default) ,'bottomright'
+    }
+    L.control.mapCenterCoord(options).addTo(map);

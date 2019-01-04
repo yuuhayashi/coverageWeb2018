@@ -6,6 +6,8 @@
  <title>OpenStreetMap coverage (amenity=postoffice)</title>
  <link rel="stylesheet" href="lib/surveyor.css">
  <link rel="stylesheet" href="lib/leaflet-0.7.3/leaflet.css"/>
+ <link rel="stylesheet" href="lib/Leaflet.MapCenterCoord/L.Control.MapCenterCoord.css" />
+ <link rel="stylesheet" href="lib/Leaflet.contextmenu/leaflet.contextmenu.min.css" />
 </head>
 <body>
 <div id="wrap">
@@ -77,9 +79,11 @@
 </div>
 <script src="lib/leaflet-0.7.3/leaflet-src.js"></script>
 <script src="lib/Leaflet.MapboxVectorTile.js"></script>
+<script src="lib/Leaflet.MapCenterCoord/L.Control.MapCenterCoord.js"></script>
+<script src="lib/Leaflet.contextmenu/leaflet.contextmenu.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
-    var jsonurl = 'GML_POSTOFFICE/coverage.postoffice.json';
+    var jsonurl = 'https://yuuhayashi.github.io/coverageWeb/GML_POSTOFFICE/coverage.postoffice.json';
     $.getJSON(jsonurl, function(data) {
         var count = 0;
         $("#source").append("国土交通省国土政策局「" + data.sourcedata + "」をもとにhayashiが編集・加工したものです。") ;
@@ -94,7 +98,7 @@
         });
     });
     
-    var tileDate = 'GML_POSTOFFICE/pbfDate.json';
+    var tileDate = 'https://yuuhayashi.github.io/coverageWeb/GML_POSTOFFICE/pbfDate.json';
     $.getJSON(tileDate, function(data) {
         $("#timestamp").append("更新:"+ data.date) ;
     });

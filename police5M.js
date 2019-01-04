@@ -31,7 +31,7 @@ grayOsmLayer.on('postcompose', function(event) {
 const police5z = new ol.layer.VectorTile({
     source: new ol.source.VectorTile({
         format: new ol.format.MVT(),
-        url: "./tiles/tilePolice5z/{z}/{x}/{y}.pbf"
+        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tilePolice5z/{z}/{x}/{y}.pbf"
     }),
     title: "Police 0: 未入力",
     visible: true,
@@ -51,7 +51,7 @@ const police5z = new ol.layer.VectorTile({
 const police5 = new ol.layer.VectorTile({
     source: new ol.source.VectorTile({
         format: new ol.format.MVT(),
-        url: "./tiles/tilePolice5/{z}/{x}/{y}.pbf"
+        url: "https://yuuhayashi.github.io/coverageWeb/tiles/tilePolice5/{z}/{x}/{y}.pbf"
     }),
     title: "Police 1: 入力済み",
     visible: true,

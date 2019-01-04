@@ -35,19 +35,19 @@ var map = L.map('map',{
     });
 
     function showLatLng (e) {
-        location.href = "/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=1";
+        location.href = "https://surveyor.mydns.jp/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=1";
     }
     function showLatLng3 (e) {
-        location.href = "/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=3";
+        location.href = "https://surveyor.mydns.jp/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=3";
     }
     function showLatLng5 (e) {
-        location.href = "/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=5";
+        location.href = "https://surveyor.mydns.jp/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=5";
     }
     function showLatLng10 (e) {
-        location.href = "/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=10";
+        location.href = "https://surveyor.mydns.jp/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=10";
     }
     function showLatLng20 (e) {
-        location.href = "/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=20";
+        location.href = "https://surveyor.mydns.jp/unMapped/api/kmz/police?latlng="+ e.latlng +"&km=20";
     }
 
     function setCenterMap (e) {

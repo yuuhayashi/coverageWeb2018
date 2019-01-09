@@ -9,7 +9,7 @@ var map = L.map('map',{
   contextmenuWidth: 180,
   
     contextmenuItems: [{
-        text: 'この地点を地図の中央に指定',
+        text: 'この地点を地図の中央に',
         callback: setCenterMap
       },
       {
@@ -65,7 +65,7 @@ var osm = L.tileLayer(
 osm.addTo(map);
 
 var mvtSource0 = new L.TileLayer.MVTSource({
-    url: "https://yuuhayashi.github.io/coverageWeb/tiles/tileBus0/{z}/{x}/{y}.pbf",
+    url: "tiles/tileBus0/{z}/{x}/{y}.pbf",
     style: function (feature) {
         var style = {};
         style.color = 'rgba(255,0,0,1)';
@@ -79,7 +79,7 @@ var mvtSource0 = new L.TileLayer.MVTSource({
 map.addLayer(mvtSource0);
 
 var mvtSource1 = new L.TileLayer.MVTSource({
-    url: "https://yuuhayashi.github.io/coverageWeb/tiles/tileBus1/{z}/{x}/{y}.pbf",
+    url: "tiles/tileBus1/{z}/{x}/{y}.pbf",
     style: function (feature) {
         var style = {};
         style.color = 'rgba(255,200,0,1)';
@@ -93,7 +93,7 @@ var mvtSource1 = new L.TileLayer.MVTSource({
 map.addLayer(mvtSource1);
 
 var mvtSource2 = new L.TileLayer.MVTSource({
-    url: "https://yuuhayashi.github.io/coverageWeb/tiles/tileBus2/{z}/{x}/{y}.pbf",
+    url: "tiles/tileBus2/{z}/{x}/{y}.pbf",
     style: function (feature) {
         var style = {};
         style.color = 'rgba(0,255,0,1)';

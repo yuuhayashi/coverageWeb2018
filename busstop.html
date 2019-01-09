@@ -93,10 +93,10 @@
 <script src="lib/Leaflet.MapboxVectorTile.js"></script>
 <script src="lib/Leaflet.MapCenterCoord/L.Control.MapCenterCoord.js"></script>
 <script src="lib/Leaflet.contextmenu/leaflet.contextmenu.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="lib/jquery-2.1.1.min.js"></script>
  <script>
 window.addEventListener('DOMContentLoaded', function() {
-    $.getJSON("https://yuuhayashi.github.io/coverageWeb/GML_BUSSTOP/coverage.busstop.json", function(data) {
+    $.getJSON("GML_BUSSTOP/coverage.busstop.json", function(data) {
         var count = 0 ;
         $("#source").append("国土交通省国土政策局「" + data.sourcedata + "」をもとにhayashiが編集・加工したものです。") ;
         $(data.coverage).each(function() {
@@ -110,7 +110,7 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    var tileDate = 'https://yuuhayashi.github.io/coverageWeb/GML_BUSSTOP/pbfDate.json';
+    var tileDate = 'GML_BUSSTOP/pbfDate.json';
     $.getJSON(tileDate, function(data) {
         $("#timestamp").append("更新:"+ data.date);
     });

@@ -101,7 +101,7 @@
 <script src="lib/Leaflet.contextmenu/leaflet.contextmenu.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
-    var jsonurl = 'https://yuuhayashi.github.io/coverageWeb/GML_FUEL/coverage.fuel.json';
+    var jsonurl = 'GML_FUEL/coverage.fuel.json';
     $.getJSON(jsonurl, function(data) {
         var count = 0;
         $("#source").append("国土交通省国土政策局「" + data.sourcedata + "」をもとにhayashiが編集・加工したものです。") ;
@@ -116,7 +116,7 @@
         });
     });
     
-    var tileDate = 'https://yuuhayashi.github.io/coverageWeb/GML_FUEL/pbfDate.json';
+    var tileDate = 'GML_FUEL/pbfDate.json';
     $.getJSON(tileDate, function(data) {
         $("#timestamp").append("更新:"+ data.date);
     });

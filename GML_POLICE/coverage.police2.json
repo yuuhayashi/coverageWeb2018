@@ -1,20 +1,20 @@
 {
- "timestamp": "2019-01-14",
+ "timestamp": "2019-01-18",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）2:警察署",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 1175,
-   "molecule": 1020,
-   "par": 86.81
+   "molecule": 1021,
+   "par": 86.89
   }
   ,  {
    "code": 1,
    "name": "北海道",
    "denominator": 69,
-   "molecule": 34,
-   "par": 49.28
+   "molecule": 36,
+   "par": 52.17
   }
   ,  {
    "code": 2,
@@ -230,8 +230,8 @@
    "code": 32,
    "name": "島根県",
    "denominator": 12,
-   "molecule": 10,
-   "par": 83.33
+   "molecule": 8,
+   "par": 66.67
   }
   ,  {
    "code": 33,
@@ -307,8 +307,8 @@
    "code": 43,
    "name": "熊本県",
    "denominator": 23,
-   "molecule": 21,
-   "par": 91.30
+   "molecule": 22,
+   "par": 95.65
   }
   ,  {
    "code": 44,

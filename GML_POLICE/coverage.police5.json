@@ -1,13 +1,13 @@
 {
- "timestamp": "",
+ "timestamp": "2019-01-27",
  "sourcedata": "国土数値情報 警察署データ（平成24年:2012）5:駐在所",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 6715,
-   "molecule": 4954,
-   "par": 73.78
+   "molecule": 4955,
+   "par": 73.79
   }
   ,  {
    "code": 1,
@@ -314,8 +314,8 @@
    "code": 44,
    "name": "大分県",
    "denominator": 113,
-   "molecule": 106,
-   "par": 93.81
+   "molecule": 107,
+   "par": 94.69
   }
   ,  {
    "code": 45,

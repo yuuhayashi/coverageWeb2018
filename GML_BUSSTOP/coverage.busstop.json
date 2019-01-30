@@ -1,13 +1,13 @@
 {
- "timestamp": "2019-01-27",
+ "timestamp": "2019-01-28",
  "sourcedata": "国土数値情報　バス停留所データ 平成２２年",
  "coverage": [
   {
    "code": 0,
    "name": "全国",
    "denominator": 254842,
-   "molecule": 46217,
-   "par": 18.14
+   "molecule": 46261,
+   "par": 18.15
   }
   ,  {
    "code": 1,
@@ -34,8 +34,8 @@
    "code": 4,
    "name": "宮城県",
    "denominator": 5501,
-   "molecule": 500,
-   "par": 9.09
+   "molecule": 501,
+   "par": 9.11
   }
   ,  {
    "code": 5,
@@ -97,15 +97,15 @@
    "code": 13,
    "name": "東京都",
    "denominator": 9446,
-   "molecule": 6394,
-   "par": 67.69
+   "molecule": 6403,
+   "par": 67.79
   }
   ,  {
    "code": 14,
    "name": "神奈川県",
    "denominator": 8466,
-   "molecule": 6176,
-   "par": 72.95
+   "molecule": 6185,
+   "par": 73.06
   }
   ,  {
    "code": 15,
@@ -153,8 +153,8 @@
    "code": 21,
    "name": "岐阜県",
    "denominator": 5851,
-   "molecule": 344,
-   "par": 5.88
+   "molecule": 368,
+   "par": 6.29
   }
   ,  {
    "code": 22,
@@ -195,8 +195,8 @@
    "code": 27,
    "name": "大阪府",
    "denominator": 5844,
-   "molecule": 2149,
-   "par": 36.77
+   "molecule": 2150,
+   "par": 36.79
   }
   ,  {
    "code": 28,
